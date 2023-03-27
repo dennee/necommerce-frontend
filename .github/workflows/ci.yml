@@ -17,7 +17,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
-          repository: netology-code/necommerce-frontend
+          repository: dennee/necommerce-frontend
           tag_with_ref: true
